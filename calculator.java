@@ -8,7 +8,7 @@ public class calculator
 		Scanner scan = new Scanner(System.in);
 		do
 		{
-			System.out.println("1. Add 2 Numbers \n");
+			System.out.println("1. Subtract 2 Numbers \n");
 			System.out.println("2. Exit \n\n");
 			System.out.println("Enter Your Choice: ");
 			choice = scan.next().charAt(0);
@@ -17,7 +17,7 @@ public class calculator
 				case '1' :	System.out.println("Enter 2 Numbers: ");
 							a = scan.nextFloat();
 							b = scan.nextFloat();
-							res = a + b;
+							res = a - b;
 							System.out.println("Result = " + res);
 							break;
 
