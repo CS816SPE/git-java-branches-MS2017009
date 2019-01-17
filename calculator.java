@@ -10,8 +10,9 @@ public class calculator
 		{
 
 			System.out.println("1. Add 2 Numbers \n");
-			System.out.println("2. Multiply 2 numbers \n");
-			System.out.println("3. Exit \n\n");
+			System.out.println("2. Subtract 2 Numbers \n");
+			System.out.println("3. Multiply 2 numbers \n");
+			System.out.println("4. Exit \n\n");
 			System.out.println("Enter Your Choice: ");
 			choice = scan.next().charAt(0);
 			switch(choice)
@@ -19,17 +20,23 @@ public class calculator
 				case '1' :	System.out.println("Enter 2 Numbers: ");
 							a = scan.nextFloat();
 							b = scan.nextFloat();
-							res = a - b;
+							res = a + b;
 							System.out.println("Result = " + res);
 							break;
 				case '2' :	System.out.println("Enter 2 Numbers: ");
+							a = scan.nextFloat();
+							b = scan.nextFloat();
+							res = a - b;
+							System.out.println("Result = " + res);
+							break;
+				case '3' :	System.out.println("Enter 2 Numbers: ");
 							a = scan.nextFloat();
 							b = scan.nextFloat();
 							res = a * b;
 							System.out.println("Result = " + res);
 							break;
 
-				case '3' :	System.exit(0);
+				case '4' :	System.exit(0);
 							break;
 
 				default  :	System.out.println("Invalid Choice!!!");
@@ -37,6 +44,6 @@ public class calculator
 			}
 			System.out.println("\n ------------------------- \n");
 
-		}while(choice != 3);
+		}while(choice != 4);
 	}
 }
