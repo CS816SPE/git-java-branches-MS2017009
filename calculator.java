@@ -8,14 +8,10 @@ public class calculator
 		Scanner scan = new Scanner(System.in);
 		do
 		{
-<<<<<<< HEAD
-			System.out.println("1. Subtract 2 Numbers \n");
-			System.out.println("2. Exit \n\n");
-=======
+
 			System.out.println("1. Add 2 Numbers \n");
 			System.out.println("2. Multiply 2 numbers \n");
 			System.out.println("3. Exit \n\n");
->>>>>>> multiply
 			System.out.println("Enter Your Choice: ");
 			choice = scan.next().charAt(0);
 			switch(choice)
